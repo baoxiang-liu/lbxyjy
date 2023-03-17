@@ -326,3 +326,634 @@ arm-none-eabi-gcc -c -mcpu=cortex-m4 -O2 -ggdb -fomit-frame-pointer -falign-func
 15:05:23 **** Incremental Build of configuration Default for project MyProject ****
 make all 
 make: Nothing to be done for 'all'.
+15:40:36 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  47908	   2948	   6236	  57092	   df04	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+15:40:43 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+15:56:41 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  48116	   2948	   6236	  57300	   dfd4	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+15:56:49 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+16:00:28 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+main.c: In function 'main':
+main.c:31:10: error: conflicting types for 'proximity_start'
+     void proximity_start(void);
+          ^~~~~~~~~~~~~~~
+../e-puck2_main-processor/ChibiOS//os/common/ports/ARMCMx/compilers/GCC/rules.mk:216: recipe for target 'build/obj/main.o' failed
+In file included from main.c:14:0:
+../e-puck2_main-processor/src/sensors/proximity.h:36:6: note: previous declaration of 'proximity_start' was here
+ void proximity_start(uint8_t mode);
+      ^~~~~~~~~~~~~~~
+make: *** [build/obj/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:05:43 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+main.c: In function 'main':
+main.c:31:5: error: too few arguments to function 'proximity_start'
+     proximity_start();
+     ^~~~~~~~~~~~~~~
+In file included from main.c:14:0:
+../e-puck2_main-processor/src/sensors/proximity.h:36:6: note: declared here
+ void proximity_start(uint8_t mode);
+      ^~~~~~~~~~~~~~~
+../e-puck2_main-processor/ChibiOS//os/common/ports/ARMCMx/compilers/GCC/rules.mk:216: recipe for target 'build/obj/main.o' failed
+main.c:44:23: error: 'Prox1' undeclared (first use in this function); did you mean 'prox1'?
+      prox1 = get_prox(Prox1);
+                       ^~~~~
+                       prox1
+main.c:44:23: note: each undeclared identifier is reported only once for each function it appears in
+main.c:34:20: warning: variable 'cprox1' set but not used [-Wunused-but-set-variable]
+     int prox1,amb1,cprox1;
+                    ^~~~~~
+main.c:34:15: warning: variable 'amb1' set but not used [-Wunused-but-set-variable]
+     int prox1,amb1,cprox1;
+               ^~~~
+main.c:34:9: warning: variable 'prox1' set but not used [-Wunused-but-set-variable]
+     int prox1,amb1,cprox1;
+         ^~~~~
+make: *** [build/obj/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:05:53 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+main.c: In function 'main':
+main.c:44:23: error: 'Prox1' undeclared (first use in this function); did you mean 'prox1'?
+      prox1 = get_prox(Prox1);
+                       ^~~~~
+../e-puck2_main-processor/ChibiOS//os/common/ports/ARMCMx/compilers/GCC/rules.mk:216: recipe for target 'build/obj/main.o' failed
+                       prox1
+main.c:44:23: note: each undeclared identifier is reported only once for each function it appears in
+main.c:34:20: warning: variable 'cprox1' set but not used [-Wunused-but-set-variable]
+     int prox1,amb1,cprox1;
+                    ^~~~~~
+main.c:34:15: warning: variable 'amb1' set but not used [-Wunused-but-set-variable]
+     int prox1,amb1,cprox1;
+               ^~~~
+main.c:34:9: warning: variable 'prox1' set but not used [-Wunused-but-set-variable]
+     int prox1,amb1,cprox1;
+         ^~~~~
+make: *** [build/obj/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:07:00 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+main.c: In function 'main':
+main.c:31:5: error: too few arguments to function 'proximity_start'
+     proximity_start();
+     ^~~~~~~~~~~~~~~
+In file included from main.c:14:0:
+../e-puck2_main-processor/src/sensors/proximity.h:36:6: note: declared here
+ void proximity_start(uint8_t mode);
+../e-puck2_main-processor/ChibiOS//os/common/ports/ARMCMx/compilers/GCC/rules.mk:216: recipe for target 'build/obj/main.o' failed
+      ^~~~~~~~~~~~~~~
+main.c:34:20: warning: variable 'cprox1' set but not used [-Wunused-but-set-variable]
+     int prox1,amb1,cprox1;
+                    ^~~~~~
+main.c:34:15: warning: variable 'amb1' set but not used [-Wunused-but-set-variable]
+     int prox1,amb1,cprox1;
+               ^~~~
+main.c:34:9: warning: variable 'prox1' set but not used [-Wunused-but-set-variable]
+     int prox1,amb1,cprox1;
+         ^~~~~
+make: *** [build/obj/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:07:18 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+main.c: In function 'main':
+main.c:34:20: warning: variable 'cprox1' set but not used [-Wunused-but-set-variable]
+     int prox1,amb1,cprox1;
+                    ^~~~~~
+main.c:34:15: warning: variable 'amb1' set but not used [-Wunused-but-set-variable]
+     int prox1,amb1,cprox1;
+               ^~~~
+main.c:34:9: warning: variable 'prox1' set but not used [-Wunused-but-set-variable]
+     int prox1,amb1,cprox1;
+         ^~~~~
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  53556	   3036	   7148	  63740	   f8fc	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+16:07:58 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+main.c: In function 'main':
+main.c:31:5: error: too few arguments to function 'proximity_start'
+     proximity_start();
+     ^~~~~~~~~~~~~~~
+In file included from main.c:14:0:
+../e-puck2_main-processor/src/sensors/proximity.h:36:6: note: declared here
+ void proximity_start(uint8_t mode);
+      ^~~~~~~~~~~~~~~
+main.c:34:20: warning: variable 'cprox1' set but not used [-Wunused-but-set-variable]
+     int prox1,amb1,cprox1;
+                    ^~~~~~
+main.c:34:15: warning: variable 'amb1' set but not used [-Wunused-but-set-variable]
+     int prox1,amb1,cprox1;
+               ^~~~
+main.c:34:9: warning: variable 'prox1' set but not used [-Wunused-but-set-variable]
+     int prox1,amb1,cprox1;
+../e-puck2_main-processor/ChibiOS//os/common/ports/ARMCMx/compilers/GCC/rules.mk:216: recipe for target 'build/obj/main.o' failed
+         ^~~~~
+make: *** [build/obj/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:08:41 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+main.c: In function 'main':
+main.c:31:5: error: too few arguments to function 'proximity_start'
+     proximity_start();
+     ^~~~~~~~~~~~~~~
+../e-puck2_main-processor/ChibiOS//os/common/ports/ARMCMx/compilers/GCC/rules.mk:216: recipe for target 'build/obj/main.o' failed
+In file included from main.c:14:0:
+../e-puck2_main-processor/src/sensors/proximity.h:36:6: note: declared here
+ void proximity_start(uint8_t mode);
+      ^~~~~~~~~~~~~~~
+main.c:34:20: warning: variable 'cprox1' set but not used [-Wunused-but-set-variable]
+     int prox1,amb1,cprox1;
+                    ^~~~~~
+main.c:34:15: warning: variable 'amb1' set but not used [-Wunused-but-set-variable]
+     int prox1,amb1,cprox1;
+               ^~~~
+main.c:34:9: warning: variable 'prox1' set but not used [-Wunused-but-set-variable]
+     int prox1,amb1,cprox1;
+         ^~~~~
+make: *** [build/obj/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:09:57 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+main.c: In function 'main':
+main.c:34:20: warning: variable 'cprox1' set but not used [-Wunused-but-set-variable]
+     int prox1,amb1,cprox1;
+                    ^~~~~~
+main.c:34:15: warning: variable 'amb1' set but not used [-Wunused-but-set-variable]
+     int prox1,amb1,cprox1;
+               ^~~~
+main.c:34:9: warning: variable 'prox1' set but not used [-Wunused-but-set-variable]
+     int prox1,amb1,cprox1;
+         ^~~~~
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  53556	   3036	   7148	  63740	   f8fc	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+16:10:59 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+16:11:20 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+16:15:09 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+main.c: In function 'main':
+main.c:43:9: error: expected '(' before '{' token
+      if {
+         ^
+../e-puck2_main-processor/ChibiOS//os/common/ports/ARMCMx/compilers/GCC/rules.mk:216: recipe for target 'build/obj/main.o' failed
+main.c:33:20: warning: variable 'cprox1' set but not used [-Wunused-but-set-variable]
+     int prox1,amb1,cprox1;
+                    ^~~~~~
+main.c:33:15: warning: variable 'amb1' set but not used [-Wunused-but-set-variable]
+     int prox1,amb1,cprox1;
+               ^~~~
+main.c:33:9: warning: variable 'prox1' set but not used [-Wunused-but-set-variable]
+     int prox1,amb1,cprox1;
+         ^~~~~
+make: *** [build/obj/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:18:44 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+main.c: In function 'main':
+main.c:33:20: warning: variable 'cprox1' set but not used [-Wunused-but-set-variable]
+     int prox1,amb1,cprox1;
+                    ^~~~~~
+main.c:33:15: warning: variable 'amb1' set but not used [-Wunused-but-set-variable]
+     int prox1,amb1,cprox1;
+               ^~~~
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  53812	   3036	   7148	  63996	   f9fc	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+16:18:48 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+16:25:18 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+main.c: In function 'main':
+main.c:33:20: warning: variable 'cprox1' set but not used [-Wunused-but-set-variable]
+     int prox1,amb1,cprox1;
+                    ^~~~~~
+main.c:33:15: warning: variable 'amb1' set but not used [-Wunused-but-set-variable]
+     int prox1,amb1,cprox1;
+               ^~~~
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  53796	   3036	   7148	  63980	   f9ec	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+16:27:38 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+main.c: In function 'main':
+main.c:33:20: warning: variable 'cprox1' set but not used [-Wunused-but-set-variable]
+     int prox1,amb1,cprox1;
+                    ^~~~~~
+main.c:33:15: warning: variable 'amb1' set but not used [-Wunused-but-set-variable]
+     int prox1,amb1,cprox1;
+               ^~~~
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  53796	   3036	   7148	  63980	   f9ec	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+16:29:12 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+main.c: In function 'main':
+main.c:33:20: warning: variable 'cprox1' set but not used [-Wunused-but-set-variable]
+     int prox1,amb1,cprox1;
+                    ^~~~~~
+main.c:33:15: warning: variable 'amb1' set but not used [-Wunused-but-set-variable]
+     int prox1,amb1,cprox1;
+               ^~~~
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  53796	   3036	   7148	  63980	   f9ec	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+16:29:14 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+16:30:22 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+main.c: In function 'main':
+main.c:33:20: warning: variable 'cprox1' set but not used [-Wunused-but-set-variable]
+     int prox1,amb1,cprox1;
+                    ^~~~~~
+main.c:33:15: warning: variable 'amb1' set but not used [-Wunused-but-set-variable]
+     int prox1,amb1,cprox1;
+               ^~~~
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  53796	   3036	   7148	  63980	   f9ec	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+16:30:24 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+16:39:37 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+main.c: In function 'main':
+main.c:50:25: error: 'prox6' undeclared (first use in this function); did you mean 'prox1'?
+      if(prox1 >= 300 && prox6 >= 300 ){
+                         ^~~~~
+../e-puck2_main-processor/ChibiOS//os/common/ports/ARMCMx/compilers/GCC/rules.mk:216: recipe for target 'build/obj/main.o' failed
+                         prox1
+main.c:50:25: note: each undeclared identifier is reported only once for each function it appears in
+main.c:39:20: warning: variable 'cprox1' set but not used [-Wunused-but-set-variable]
+     int prox1,amb1,cprox1;
+                    ^~~~~~
+main.c:39:15: warning: variable 'amb1' set but not used [-Wunused-but-set-variable]
+     int prox1,amb1,cprox1;
+               ^~~~
+make: *** [build/obj/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:40:46 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+main.c: In function 'main':
+main.c:50:28: error: 'prox6' undeclared (first use in this function); did you mean 'prox1'?
+      if((prox1 >= 300) && (prox6 >= 300)){
+                            ^~~~~
+                            prox1
+main.c:50:28: note: each undeclared identifier is reported only once for each function it appears in
+../e-puck2_main-processor/ChibiOS//os/common/ports/ARMCMx/compilers/GCC/rules.mk:216: recipe for target 'build/obj/main.o' failed
+main.c:39:20: warning: variable 'cprox1' set but not used [-Wunused-but-set-variable]
+     int prox1,amb1,cprox1;
+                    ^~~~~~
+main.c:39:15: warning: variable 'amb1' set but not used [-Wunused-but-set-variable]
+     int prox1,amb1,cprox1;
+               ^~~~
+make: *** [build/obj/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:41:04 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+main.c: In function 'main':
+main.c:39:26: warning: variable 'cprox1' set but not used [-Wunused-but-set-variable]
+     int prox1,prox6,amb1,cprox1;
+                          ^~~~~~
+main.c:39:21: warning: variable 'amb1' set but not used [-Wunused-but-set-variable]
+     int prox1,prox6,amb1,cprox1;
+                     ^~~~
+main.c:50:24: warning: 'prox6' may be used uninitialized in this function [-Wmaybe-uninitialized]
+      if((prox1 >= 300) && (prox6 >= 300)){
+         ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  54356	   3036	   7212	  64604	   fc5c	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+16:41:19 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+16:41:20 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+16:42:48 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+main.c: In function 'main':
+main.c:39:26: warning: variable 'cprox1' set but not used [-Wunused-but-set-variable]
+     int prox1,prox6,amb1,cprox1;
+                          ^~~~~~
+main.c:39:21: warning: variable 'amb1' set but not used [-Wunused-but-set-variable]
+     int prox1,prox6,amb1,cprox1;
+                     ^~~~
+main.c:50:24: warning: 'prox6' may be used uninitialized in this function [-Wmaybe-uninitialized]
+      if((prox1 >= 300) && (prox6 >= 300)){
+         ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  54388	   3036	   7212	  64636	   fc7c	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+16:42:49 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+16:43:52 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+main.c: In function 'main':
+main.c:39:26: warning: variable 'cprox1' set but not used [-Wunused-but-set-variable]
+     int prox1,prox6,amb1,cprox1;
+                          ^~~~~~
+main.c:39:21: warning: variable 'amb1' set but not used [-Wunused-but-set-variable]
+     int prox1,prox6,amb1,cprox1;
+                     ^~~~
+main.c:50:24: warning: 'prox6' may be used uninitialized in this function [-Wmaybe-uninitialized]
+      if((prox1 >= 300) && (prox6 >= 300)){
+         ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  54388	   3036	   7212	  64636	   fc7c	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+16:44:26 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+main.c:22:1: warning: data definition has no type or storage class
+ motors_init();
+ ^~~~~~~~~~~
+main.c:22:1: warning: type defaults to 'int' in declaration of 'motors_init' [-Wimplicit-int]
+main.c:22:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+main.c:22:1: error: conflicting types for 'motors_init'
+In file included from main.c:16:0:
+../e-puck2_main-processor/src/motors.h:57:6: note: previous declaration of 'motors_init' was here
+ void motors_init(void);
+      ^~~~~~~~~~~
+main.c: In function 'main':
+../e-puck2_main-processor/ChibiOS//os/common/ports/ARMCMx/compilers/GCC/rules.mk:216: recipe for target 'build/obj/main.o' failed
+main.c:38:26: warning: variable 'cprox1' set but not used [-Wunused-but-set-variable]
+     int prox1,prox6,amb1,cprox1;
+                          ^~~~~~
+main.c:38:21: warning: variable 'amb1' set but not used [-Wunused-but-set-variable]
+     int prox1,prox6,amb1,cprox1;
+                     ^~~~
+make: *** [build/obj/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:46:06 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+main.c:22:1: warning: data definition has no type or storage class
+ motors_init();
+ ^~~~~~~~~~~
+main.c:22:1: warning: type defaults to 'int' in declaration of 'motors_init' [-Wimplicit-int]
+main.c:22:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+main.c:22:1: error: conflicting types for 'motors_init'
+In file included from main.c:16:0:
+../e-puck2_main-processor/src/motors.h:57:6: note: previous declaration of 'motors_init' was here
+ void motors_init(void);
+      ^~~~~~~~~~~
+../e-puck2_main-processor/ChibiOS//os/common/ports/ARMCMx/compilers/GCC/rules.mk:216: recipe for target 'build/obj/main.o' failed
+main.c: In function 'main':
+main.c:39:26: warning: variable 'cprox1' set but not used [-Wunused-but-set-variable]
+     int prox1,prox6,amb1,cprox1;
+                          ^~~~~~
+main.c:39:21: warning: variable 'amb1' set but not used [-Wunused-but-set-variable]
+     int prox1,prox6,amb1,cprox1;
+                     ^~~~
+make: *** [build/obj/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:46:48 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+main.c: In function 'main':
+main.c:37:26: warning: variable 'cprox1' set but not used [-Wunused-but-set-variable]
+     int prox1,prox6,amb1,cprox1;
+                          ^~~~~~
+main.c:37:21: warning: variable 'amb1' set but not used [-Wunused-but-set-variable]
+     int prox1,prox6,amb1,cprox1;
+                     ^~~~
+main.c:48:24: warning: 'prox6' may be used uninitialized in this function [-Wmaybe-uninitialized]
+      if((prox1 >= 300) && (prox6 >= 300)){
+         ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  55892	   3036	   7212	  66140	  1025c	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+16:46:52 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+16:47:52 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+main.c: In function 'main':
+main.c:37:26: warning: variable 'cprox1' set but not used [-Wunused-but-set-variable]
+     int prox1,prox6,amb1,cprox1;
+                          ^~~~~~
+main.c:37:21: warning: variable 'amb1' set but not used [-Wunused-but-set-variable]
+     int prox1,prox6,amb1,cprox1;
+                     ^~~~
+main.c:48:24: warning: 'prox6' may be used uninitialized in this function [-Wmaybe-uninitialized]
+      if((prox1 >= 300) && (prox6 >= 300)){
+         ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  55892	   3036	   7212	  66140	  1025c	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+16:49:23 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+main.c: In function 'main':
+main.c:37:26: warning: variable 'cprox1' set but not used [-Wunused-but-set-variable]
+     int prox1,prox6,amb1,cprox1;
+                          ^~~~~~
+main.c:37:21: warning: variable 'amb1' set but not used [-Wunused-but-set-variable]
+     int prox1,prox6,amb1,cprox1;
+                     ^~~~
+main.c:48:24: warning: 'prox6' may be used uninitialized in this function [-Wmaybe-uninitialized]
+      if((prox1 >= 300) && (prox6 >= 300)){
+         ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  55892	   3036	   7212	  66140	  1025c	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+16:49:24 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+16:50:25 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+main.c: In function 'main':
+main.c:37:26: warning: variable 'cprox1' set but not used [-Wunused-but-set-variable]
+     int prox1,prox6,amb1,cprox1;
+                          ^~~~~~
+main.c:37:21: warning: variable 'amb1' set but not used [-Wunused-but-set-variable]
+     int prox1,prox6,amb1,cprox1;
+                     ^~~~
+main.c:48:24: warning: 'prox6' may be used uninitialized in this function [-Wmaybe-uninitialized]
+      if((prox1 >= 300) && (prox6 >= 300)){
+         ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  55892	   3036	   7212	  66140	  1025c	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+16:50:27 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+16:51:05 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+main.c: In function 'main':
+main.c:37:26: warning: variable 'cprox1' set but not used [-Wunused-but-set-variable]
+     int prox1,prox6,amb1,cprox1;
+                          ^~~~~~
+main.c:37:21: warning: variable 'amb1' set but not used [-Wunused-but-set-variable]
+     int prox1,prox6,amb1,cprox1;
+                     ^~~~
+main.c:48:24: warning: 'prox6' may be used uninitialized in this function [-Wmaybe-uninitialized]
+      if((prox1 <= 300) && (prox6 <= 300)){
+         ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  55956	   3036	   7212	  66204	  1029c	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+16:51:06 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
